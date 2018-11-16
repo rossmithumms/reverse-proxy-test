@@ -20,11 +20,11 @@ Testing With HTTP
 3. Open `http://thing1.test`; you'll see a hash for the container
 4. Open `http://thing2.test`; you'll see a different hash for the second container
 
-Testing with HTTPS
+Testing With HTTPS
 ------------------
 1. Make sure your hosts file points `thing1.test` and `thing2.test` to localhost.
 2. Ensure your docker.sock volume mapping is right.
 3. Have self-signed certs stored in `~/certs` for both sites.
 4. `docker-compose -f https-docker-compose.yml up`
-4. Open `http://thing1.test` and ignore/accept security warning; you'll see a hash for the container
-5. Open `http://thing2.test` and ignore/accept security warning; you'll see a different hash for the second container
+4. Open `https://thing1.test` and ignore/accept security warning; you'll see a hash for the container
+5. Open `https://thing2.test` and ignore/accept security warning; you'll see a different hash for the second container
